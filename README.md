@@ -48,8 +48,8 @@ An NLP based Car Sales Conversation Information Extractor and Analyzer.
   * Used ***Ngrok*** for Port-forwording
 
 ***Output:***
-
-[![Watch the video](https://youtu.be/atTGzbZ0wk4)
+source: https://youtu.be/atTGzbZ0wk4
+[![Watch the video]((https://youtu.be/atTGzbZ0wk4))
   
 ***Conclusion:***
 
