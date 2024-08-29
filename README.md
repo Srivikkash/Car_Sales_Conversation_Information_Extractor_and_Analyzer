@@ -46,6 +46,10 @@ An NLP based Car Sales Conversation Information Extractor and Analyzer.
     *   In this NLP process i had used few custom data to train the model for our specific requirement 
   * Used ***Flask*** to build web Application to deploy the model.
   * Used ***Ngrok*** for Port-forwording
+
+***Output:***
+
+[![Watch the video](https://github.com/Srivikkash/Car_Sales_Conversation_Information_Extractor_and_Analyzer/blob/7e72170852075a2936f349212156070073e4fd21/output_Video/final_output.mp4)
   
 ***Conclusion:***
 
