@@ -1,0 +1,22 @@
+{
+    "Customer_Requirements": {
+        "Car_Type": "Null",
+        "Fuel_Type": "diesel",
+        "Color": "Null",
+        "Distance_Travelled": "13 km",
+        "Make_Year": "2014",
+        "Transmission_Type": "manual"
+    },
+    "Company_Policies": {
+        "Free_RC_Transfer": "Null",
+        "5_Day_Money_Back_Guarantee": "Null",
+        "Free_RSA": "Null",
+        "Return_Policy": "Null"
+    },
+    "Customer_Objections": {
+        "Refurbishment_Quality": "second owner",
+        "Car_Issues": "Null",
+        "Price_Issues": "Null",
+        "Customer_Experience_Issues": "Null"
+    }
+}

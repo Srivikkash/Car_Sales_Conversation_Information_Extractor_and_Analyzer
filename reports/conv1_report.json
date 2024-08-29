@@ -1,0 +1,22 @@
+{
+    "Customer_Requirements": {
+        "Car_Type": "suv",
+        "Fuel_Type": "petrol",
+        "Color": "white",
+        "Distance_Travelled": "5,000 kilometers",
+        "Make_Year": "2017",
+        "Transmission_Type": "manual"
+    },
+    "Company_Policies": {
+        "Free_RC_Transfer": "Null",
+        "5_Day_Money_Back_Guarantee": "Null",
+        "Free_RSA": "Null",
+        "Return_Policy": "Null"
+    },
+    "Customer_Objections": {
+        "Refurbishment_Quality": "Null",
+        "Car_Issues": "Null",
+        "Price_Issues": "Null",
+        "Customer_Experience_Issues": "Null"
+    }
+}

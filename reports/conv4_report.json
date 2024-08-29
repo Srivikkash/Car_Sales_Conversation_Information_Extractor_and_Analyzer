@@ -1,0 +1,22 @@
+{
+    "Customer_Requirements": {
+        "Car_Type": "Null",
+        "Fuel_Type": "Null",
+        "Color": "grey",
+        "Distance_Travelled": "18 km",
+        "Make_Year": "2022",
+        "Transmission_Type": "automatic"
+    },
+    "Company_Policies": {
+        "Free_RC_Transfer": "Null",
+        "5_Day_Money_Back_Guarantee": "Null",
+        "Free_RSA": "Null",
+        "Return_Policy": "Null"
+    },
+    "Customer_Objections": {
+        "Refurbishment_Quality": "repainted",
+        "Car_Issues": "Null",
+        "Price_Issues": "Null",
+        "Customer_Experience_Issues": "Null"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "Customer_Requirements": {
+        "Car_Type": "Null",
+        "Fuel_Type": "Null",
+        "Color": "Null",
+        "Distance_Travelled": "34,000 km",
+        "Make_Year": "Null",
+        "Transmission_Type": "automatic"
+    },
+    "Company_Policies": {
+        "Free_RC_Transfer": "Null",
+        "5_Day_Money_Back_Guarantee": "Null",
+        "Free_RSA": "Null",
+        "Return_Policy": "Null"
+    },
+    "Customer_Objections": {
+        "Refurbishment_Quality": "repainted",
+        "Car_Issues": "Null",
+        "Price_Issues": "price negotiation",
+        "Customer_Experience_Issues": "Null"
+    }
+}
