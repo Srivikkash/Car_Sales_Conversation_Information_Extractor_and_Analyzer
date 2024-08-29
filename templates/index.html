@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .drop-area {
+            border: 2px dashed #007bff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .drop-area.hover {
+            border-color: #0056b3;
+            background-color: #e9ecef;
+        }
+        .file-info {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Car Sales Conversation Information
+            Extractor and Analyzer</h2>
+        <form action="/" method="post" enctype="multipart/form-data" class="text-center mt-4">
+            <div class="form-group">
+                <input type="file" name="file" id="fileElem" class="form-control-file" accept=".pdf, .txt" style="display: none;">
+                <label for="fileElem" class="btn btn-primary">Choose File</label>
+            </div>
+            <div class="drop-area" id="drop-area">
+                <p>Drag and drop your file here</p>
+                <p>or</p>
+                <p><strong>Click to select a file</strong></p>
+                <p class="file-info" id="file-info">No file chosen</p>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        const dropArea = document.getElementById('drop-area');
+        const fileElem = document.getElementById('fileElem');
+        const fileInfo = document.getElementById('file-info');
+
+        // Prevent default drag behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, preventDefaults, false); 
+            document.body.addEventListener(eventName, preventDefaults, false); 
+        });
+
+        // Highlight drop area when item is dragged over it
+        dropArea.addEventListener('dragover', () => dropArea.classList.add('hover'), false);
+        dropArea.addEventListener('dragleave', () => dropArea.classList.remove('hover'), false);
+        
+        // Handle dropped files
+        dropArea.addEventListener('drop', handleDrop, false);
+        dropArea.addEventListener('click', () => fileElem.click(), false);
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            handleFiles(files);
+        }
+
+        function handleFiles(files) {
+            if (files.length > 0) {
+                const fileName = files[0].name; // Get the name of the first file
+                fileElem.files = files; // Assign the dropped files to the hidden input
+                fileInfo.textContent = fileName; // Display the file name
+            }
+        }
+
+        // Display the chosen file name when the file input changes
+        fileElem.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                const fileName = e.target.files[0].name;
+                fileInfo.textContent = fileName; // Display the file name
+            }
+        });
+    </script>
+</body>
+</html>

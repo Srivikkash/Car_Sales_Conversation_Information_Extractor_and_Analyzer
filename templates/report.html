@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Data Report</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for contrast */
+        }
+        .container {
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the container */
+        }
+        h2 {
+            color: #007bff; /* Bootstrap primary color */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .table thead th {
+            background-color: #007bff; /* Blue background for table header */
+            color: white; /* White text for contrast */
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #e9f7ff; /* Light blue for even rows */
+        }
+        .table tbody tr:hover {
+            background-color: #d1ecf1; /* Highlight on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Data Report</h2>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Criterias</th>
+                    <th>Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Car Type</td><td>{{ data.Customer_Requirements.Car_Type }}</td></tr>
+                <tr><td>Fuel Type</td><td>{{ data.Customer_Requirements.Fuel_Type }}</td></tr>
+                <tr><td>Color</td><td>{{ data.Customer_Requirements.Color }}</td></tr>
+                <tr><td>Distance Travelled</td><td>{{ data.Customer_Requirements.Distance_Travelled }}</td></tr>
+                <tr><td>Make Year</td><td>{{ data.Customer_Requirements.Make_Year }}</td></tr>
+                <tr><td>Transmission Type</td><td>{{ data.Customer_Requirements.Transmission_Type }}</td></tr>
+                <tr><td>Free RC Transfer</td><td>{{ data.Company_Policies.Free_RC_Transfer }}</td></tr>
+                <tr><td>5 Day Money Back Guarantee</td><td>{{ data.Company_Policies['5_Day_Money_Back_Guarantee'] }}</td></tr>
+                <tr><td>Free RSA</td><td>{{ data.Company_Policies.Free_RSA }}</td></tr>
+                <tr><td>Return Policy</td><td>{{ data.Company_Policies.Return_Policy }}</td></tr>
+                <tr><td>Refurbishment Quality</td><td>{{ data.Customer_Objections.Refurbishment_Quality }}</td></tr>
+                <tr><td>Car Issues</td><td>{{ data.Customer_Objections.Car_Issues }}</td></tr>
+                <tr><td>Price Issues</td><td>{{ data.Customer_Objections.Price_Issues }}</td></tr>
+                <tr><td>Customer Experience Issues</td><td>{{ data.Customer_Objections.Customer_Experience_Issues }}</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
