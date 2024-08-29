@@ -49,7 +49,7 @@ An NLP based Car Sales Conversation Information Extractor and Analyzer.
 
 ***Output:***
 
-[![Watch the video](https://github.com/Srivikkash/Car_Sales_Conversation_Information_Extractor_and_Analyzer/blob/7e72170852075a2936f349212156070073e4fd21/output_Video/final_output.mp4)
+[![Watch the video](https://youtu.be/atTGzbZ0wk4)
   
 ***Conclusion:***
 
